@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+
+{% block contenido %}
+<section id="mostrar_opinion">
+<h1>Eliminar libro</h1>
+
+<p>Seguro que desea eliminar el libro?</p>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="submit" action="" value="Si, eliminar." />
+</form>
+<a href="{% url 'apps.cine:listar_cine' %}" class="btn btn-primary" style="font-size: small;">No, volver.</a>
+</section>
+{% endblock %}

@@ -1,0 +1,159 @@
+
+
+.body{ 
+  /* flex: 1; */
+  background-image: linear-gradient(to right, blue, pink); 
+  width: 100%;
+  }
+
+  h1 {
+    /* Usa una fuente de Google [^1^][9] */
+    font-size: 48px; /* Cambia el tamaño de la letra */
+    font-weight: bold; /* Hace la letra más gruesa */
+    color: white; /* Cambia el color de la letra */
+    text-align: center; /* Centra el texto horizontalmente */
+    text-shadow: 2px 2px 4px #000000; /* Añade una sombra al texto */
+  }
+  
+.primeraparte {
+    /* background-color: rgb(130, 126, 134); */
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    }
+
+
+.carrusel {
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+  .segundaparte {
+    /* background-color: rgb(148, 144, 144); */
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin-left: 0px;
+    margin-top: 10px;
+
+  }
+
+  #segundapartecaja1 {
+    /* background-color: white; */
+    text-align: center;
+    width: 20%;
+    height: 95%;
+    margin-top: 10px;
+    padding-left: 20px;
+    margin: 6px;
+    float: left;
+
+  }
+
+  .terceraparte {
+    /* background-color: blueviolet; */
+    text-align: center;
+    width: 95%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  #separadordebotones{
+    margin: 5px;
+  }
+
+.cajafooter1{
+    width: 50%;
+    margin-top: 3%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: auto;
+    float: left;
+  }
+
+  .cajafooter2{
+    width: 50%;
+    margin-top: 3%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    float: left;
+  }
+
+  #registro{
+    /* margin-left: 320px; */
+    margin-top: 0px;
+    width: 100%;
+    /* background-color: blueviolet;
+    height: auto; */
+
+  }
+
+#ingresar{
+  height: 600px;
+
+  padding: 0px;
+}
+
+
+#inicioSesion{
+  margin-left: 450px;
+  margin-top: 0px;
+  padding-top: 60px;
+  width: 30%;
+  
+
+}
+
+.form {
+  text-align: center;
+  border: none; 
+}
+
+
+#listarlibros{
+  width: 100%;
+  background-image: linear-gradient(to left, blue, pink); 
+  text-align: center;
+  border: 2px solid white;
+  padding: 5px;
+
+}
+.movie-card { 
+  width: 20%; 
+  height: 200px; 
+ 
+  /* margin: 20px auto;  */
+  border: 2px solid white; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.movie-image { 
+  width: 120px; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.movie-text { 
+  width: 80%; 
+  text-align: center; 
+}
+
+#agregar_categoria{
+  height: 400px;
+}
+
+
+
+
+#agregar_opinion{
+  width: 600px;
+ 
+}

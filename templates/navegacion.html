@@ -1,0 +1,74 @@
+{% load static %}
+{% if user.is_authenticated %}
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+
+    <!-- Navbar content -->
+    <ul class="nav">
+    <li class="nav-item" >
+      
+
+        <a class="nav-link" href="{% url 'inicio' %}"style="color: white;">Inicio</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'apps.usuarios:cerrar_sesion' %}"style="color: white;">Cerrar sesión</a>
+    </li>
+
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'apps.cine:listar_cine' %}"style="color: white;">Tus pelis</a>
+    </li>
+</ul>
+</nav>
+    {% else %}
+<!-- <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom border-body" data-bs-theme="dark">
+  <!-- <ul class="nav" style="text-align:center"> -->
+    <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+    
+      <ul class="nav" style="text-align:center">
+        <li class="nav-item" >
+      <a class="nav-link" href="{% url 'inicio' %}"style="color: white;">Inicio</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'apps.usuarios:registrar' %}" style="color: white;">Registrarse</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'apps.usuarios:iniciar_sesion' %}"style="color: white;">Ingresar</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'apps.cine:listar_cine' %}" style="color: white;">Tus Pelis</a>
+    </li>
+
+  </ul>
+
+  {% endif %}
+  </nav>
+</nav>
+</div>
+
+
+  {% if user.es_colaborador %}
+
+    <!-- Navbar content -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Administrar
+      </button>
+      <ul class="dropdown-menu">
+    
+
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'apps.usuarios:listar_usuarios' %}" >Listar Usuarios</a>
+        <a class="nav-link" href="{% url 'apps.cine:agregar_categoria' %}" >Agregar Categoria</a>
+        <a class="nav-link" href="{% url 'apps.cine:agregar_cine' %}">Agregar Cine</a>
+ 
+    </li>
+    </ul>
+
+  </div>
+  {% endif %}
+</nav>
